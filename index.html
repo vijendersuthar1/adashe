@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adashe</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            scroll-behavior: smooth !important;
+            outline: none !important;
+        }
+
+        :root {
+            --primary-color: #fff;
+            --secondary-color: #012B40;
+            --headings-color: rgba(104, 90, 248, 1);
+        }
+
+        .dark-theme {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+
+        .head {
+            color: var(--headings-color);
+        }
+    </style>
+
+
+</head>
+
+<body class="font-[Montserrat]">
+    <!-- header-start -->
+    <header class=" shadow-[0px_4px_9px_0px_rgba(0,0,0,0.05)]">
+        <nav
+            class="max-w-[1626px] w-full mx-auto px-[12px] flex justify-between items-center h-[98px] max-lg:h-[88px] max-sm:h-[57px]  ">
+            <a href="#"><img class=" max-md:max-w-[160px]" src="/src/images/svg/adashe-logo.svg" alt="logo"></a>
+            <div class="flex gap-[56px] font-[500] text-[17px] items-center">
+                <div class="gap-[56px] flex  max-xl:absolute max-xl:top-0 max-xl:left-[-150%] max-xl:flex-col max-xl:bg-black max-xl:text-white max-xl:w-1/2 max-xl:h-screen max-xl:px-[20px] max-xl:py-[40px] items-center max-xl:duration-[1s] max-md:w-full"
+                    id="slider">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="white" width="50px"
+                            class="right-[5%] max-xl:absolute xl:hidden" id="cross">
+                            <path
+                                d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z" />
+                        </svg>
+                    </div>
+                    <a href="#about" class="max-w-[140px] text-center duration-[0.2s] hover:font-[700]">ABOUT</a>
+                    <a href="#services" class="max-w-[140px] text-center duration-[0.2s] hover:font-[700]">SERVICES</a>
+                    <a href="#roadmap" class="max-w-[140px] text-center duration-[0.2s] hover:font-[700]">ROADMAP</a>
+                    <a href="#team" class="max-w-[140px] text-center duration-[0.2s] hover:font-[700]">TEAM</a>
+                    <a href="#faq" class="max-w-[140px] text-center duration-[0.2s] hover:font-[700]">FAQ’s</a>
+                    <button onclick="window.location.href='buytoken.html'"
+                        class=" md:hidden max-lg:px-[22px] rounded-[36px] bg-[linear-gradient(to_right,#423CE3,#8635ED)] cursor-pointer font-[700] text-white px-[44px] py-[20px] hover:translate-y-[-5px] duration-[0.5s] ">BUY
+                        TOKEN</button>
+
+                </div>
+                <div class="flex items-center gap-[48px] max-sm:gap-[15px]">
+                    <button onclick="window.location.href='buytoken.html'"
+                        class=" max-md:hidden rounded-[36px] bg-[linear-gradient(to_right,#423CE3,#8635ED)] cursor-pointer font-[700] text-white px-[44px] py-[20px] hover:translate-y-[-5px] duration-[0.5s] ">BUY
+                        TOKEN</button>
+                    <a href="#" class="hover:scale-[1.1] duration-[0.5s] ">
+                        <img class="max-md:max-w-[30px]" id="dark-light-mode" src="/src/images/svg/light-dark-mode.svg"
+                            alt="dark-light-mode">
+                    </a>
+                    <a href="#" id="menu" class="xl:hidden">
+                        <img class=" max-md:max-w-[50px]" src="/src/images/svg/menu-icon.svg" alt="menu-bar">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header-end -->
+    <!-- main-start -->
+    <main>
+        <!-- hero-section -->
+        <section class=" bg-[url(src/images/png/hero-sec-bg.png)] ">
+            <div
+                class="pt-[115px] pb-[139px] max-xl:pt-[90px] max-xl:pb-[90px] max-md:pt-[50px] max-md:pb-[40px] max-sm:pt-[40px] max-sm:pb-[30px]">
+                <div class="max-w-[1626px] w-full mx-auto px-[12px] flex justify-between items-center max-xl:flex-col">
+                    <article class="max-w-[691px] w-full ">
+                        <h1
+                            class="text-[#4F3BE5] text-[72px] font-[700] max-xl:text-[52px] max-xl:justify-center flex max-md:text-[32px]">
+                            Data
+                            and Defi</h1>
+                        <p class="font-[500] leading-[220.00000000000003%] max-xl:text-center max-md:text-[12px]  ">
+                            Project Adashe is
+                            building a system for data
+                            federation and
+                            virtualization, tied to a smart
+                            contract it can enable automatic execution of commands. We aim to to eliminate
+                            inefficiencies,
+                            high costs and restrictions in payments, transacting and record keeping, perpetually
+                            connecting
+                            the world of finance and data.</p>
+
+                        <div class="mt-[28px] flex gap-[10px] max-xl:justify-center">
+                            <button
+                                class=" rounded-[36px] bg-[linear-gradient(to_right,#423CE3,#8635ED)] cursor-pointer font-[700] text-white px-[44px] py-[20px] hover:translate-y-[-5px] duration-[0.5s] max-md:text-[12px] max-md:px-[11px] max-md:py-[11px]">BUY
+                                TOKEN</button>
+                            <button
+                                class=" text-[#5953EF] font-[700] bg-[transparent] border-[2px] rounded-[36px] px-[44px] py-[20px] hover:translate-y-[-5px] duration-[0.5s] cursor-pointer max-md:text-[12px] max-md:px-[11px] max-md:py-[11px]">WHITEPAPER</button>
+                        </div>
+                    </article>
+                    <aside class="max-xl:mt-[28px]">
+                        <img class="rounded-[17px] max-w-[808px] min-h-[506px] w-full max-xl:min-h-[200px]"
+                            src="/src/gifs/hero-sec-aside.gif" alt="pixels-gif">
+                    </aside>
+                </div>
+                <div
+                    class="flex flex-wrap px-[12px] mt-[123px] items-center gap-[150px] max-lg:gap-[80px] max-sm:gap-[50px] justify-center  max-xl:mt-[60px] ">
+                    <div class="text-center">
+                        <h2
+                            class="text-[#20187B] text-[38px] font-[800] leading-[100%] mx-auto items-center max-lg:text-[26px] max-md:text-[18px]">
+                            0.00044
+                        </h2>
+                        <p class=" leading-[162%] font-[500] mx-auto items-center pt-[10px] max-lg:text-[12px] ">Most
+                            recent price (ADSE)
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <h2
+                            class="text-[#20187B] text-[38px] font-[800] leading-[100%] mx-auto items-center max-lg:text-[26px] max-md:text-[18px]">
+                            $7000</h2>
+                        <p class=" leading-[162%] font-[500] mx-auto items-center pt-[10px]  max-lg:text-[12px]">Average
+                            purchase (USD)</p>
+                    </div>
+                    <div class="text-center">
+                        <h2
+                            class="text-[#20187B] text-[38px] font-[800] leading-[100%] mx-auto items-center max-lg:text-[26px] max-md:text-[18px]">
+                            9,000,000,000+
+                        </h2>
+                        <p class=" leading-[162%] font-[500] mx-auto items-center pt-[10px]  max-lg:text-[12px]">Total
+                            tokens remaining</p>
+                    </div>
+                    <div class="text-center">
+                        <h2
+                            class="text-[#20187B] text-[38px] font-[800] leading-[100%] mx-auto items-center max-lg:text-[26px] max-md:text-[18px]">
+                            65%</h2>
+                        <p class=" leading-[162%] font-[500] mx-auto items-center pt-[10px]  max-lg:text-[12px]">YOY
+                            Growth</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-section -->
+        <section class="bg-[url(src/images/png/about-bg.png)]" id="about">
+            <div
+                class="max-w-[1626px] w-full mx-auto px-[12px] py-[223px]  max-xl:pt-[90px] max-xl:pb-[90px] max-md:pt-[50px] max-md:pb-[40px] max-sm:pt-[40px] max-sm:pb-[30px]">
+                <h2 class=" text-[rgba(79,59,229,1)] text-[60px] font-[700] max-xl:text-[52px] max-xl:justify-center max-xl:text-center
+                flex max-md:text-[32px]">
+                    Project Adashe</h2>
+
+                <p
+                    class="max-w-[1532px] w-full font-[500] text-[15px] leading-[220.00000000000003%]  max-xl:text-center max-md:text-[12px] ">
+                    Adashe is a
+                    seamless fusion of Tradefi, DeFi, and Data systems, It is
+                    the
+                    future of Money, It is
+                    available across multiple Blockchains. Developed by crypto pioneers, aerospace inventors, engineers,
+                    data scientist and tech leaders, Adashe establishes a standardized industry framework for trade,
+                    finance, data and for adoption of blockchain and crypto.</p>
+                <div class="flex  max-lg:justify-center">
+                    <button
+                        class="font-[600] leading-[220.00000000000003%] text-[rgba(38,63,222,1)] cursor-pointer mt-[25px] duration-[0.5s] hover:font-[800] ">View
+                        More</button>
+                </div>
+                <div
+                    class="grid grid-cols-4 mt-[76px] max-md:mt-[40px] max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-[20px]">
+                    <div
+                        class="flex items-start max-w-[361px] w-full mx-auto max-sm:flex-col cursor-pointer hover:translate-y-[-5px] duration-[0.3s]">
+                        <img class="pr-[16px] max-sm:mx-auto" src="/src/images/svg/executable-data.svg"
+                            alt="executable-data">
+                        <div>
+                            <h3
+                                class="text-[rgba(32,24,123,1)] text-[20px] font-[700] leading-[220.00000000000003%] max-lg:text-[26px] max-md:text-[18px] max-sm:text-center">
+                                Executable Data</h3>
+                            <p class="text-[14px] font-[500] leading-[190%]  max-md:text-[12px] max-sm:text-center">
+                                Adashe is a seamless
+                                fusion of Tradefi,
+                                DeFi,
+                                and Data systems, It is the future of Money.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-start max-w-[361px] w-full mx-auto max-sm:flex-col cursor-pointer hover:translate-y-[-5px] duration-[0.3s]">
+                        <img class="pr-[16px] max-sm:mx-auto" src="/src/images/svg/finance.svg" alt="finance">
+                        <div>
+                            <h3
+                                class="text-[rgba(32,24,123,1)] text-[20px] font-[700] leading-[220.00000000000003%] max-lg:text-[26px] max-md:text-[18px] max-sm:text-center">
+                                Decentralized Finance</h3>
+                            <p class="text-[14px] font-[500] leading-[190%]  max-md:text-[12px] max-sm:text-center">
+                                Adashe is a seamless
+                                fusion of Tradefi,
+                                DeFi,
+                                and Data systems, It is the future of Money.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-start max-w-[361px] w-full mx-auto max-sm:flex-col cursor-pointer hover:translate-y-[-5px] duration-[0.3s]">
+                        <img class="pr-[16px] max-sm:mx-auto" src="/src/images/svg/currency.svg" alt="currency">
+                        <div>
+                            <h3
+                                class="text-[rgba(32,24,123,1)] text-[20px] font-[700] leading-[220.00000000000003%] max-lg:text-[26px] max-md:text-[18px] max-sm:text-center">
+                                Currency</h3>
+                            <p class="text-[14px] font-[500] leading-[190%]  max-md:text-[12px] max-sm:text-center">
+                                Adashe is a seamless
+                                fusion of Tradefi,
+                                DeFi,
+                                and Data systems, It is the future of Money.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-start max-w-[361px] w-full mx-auto max-sm:flex-col cursor-pointer hover:translate-y-[-5px] duration-[0.3s]">
+                        <img class="pr-[16px] max-sm:mx-auto" src="/src/images/svg/trade.svg" alt="trade">
+                        <div>
+                            <h3
+                                class="text-[rgba(32,24,123,1)] text-[20px] font-[700] leading-[220.00000000000003%] max-lg:text-[26px] max-md:text-[18px] max-sm:text-center">
+                                Trade Finance</h3>
+                            <p class="text-[14px] font-[500] leading-[190%]  max-md:text-[12px] max-sm:text-center">
+                                Adashe is a seamless
+                                fusion of Tradefi,
+                                DeFi,
+                                and Data systems, It is the future of Money.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- roadmap-section -->
+        <section class="bg-[url(src/images/png/road-map-bg.png)]" id="roadmap">
+            <div
+                class="max-w-[1626px] w-full mx-auto px-[12px] flex justify-between items-center pt-[125.14px] pb-[115.14px] max-lg:flex-col  max-xl:pt-[90px] max-xl:pb-[90px] max-md:pt-[50px] max-md:pb-[40px] max-sm:pt-[40px] max-sm:pb-[30px]">
+                <article class=" max-w-[723px] w-full max-lg:text-center">
+                    <h2 class="text-[rgba(79,59,229,1)] font-[700] text-[59.54px] pb-[5px] max-xl:text-[52px] max-xl:justify-center
+                flex max-md:text-[32px]">RoadMap</h2>
+                    <p
+                        class="leading-[220.00000000000003%] font-[500] text-[14.88px]  max-xl:text-center max-md:text-[12px]">
+                        Adashe is a seamless fusion of
+                        Tradefi,
+                        DeFi, and Data systems, It is the future of Money, It is
+                        available across multiple Blockchains. Developed by crypto pioneers, aerospace inventors,
+                        engineers,
+                        data scientist and tech leaders, Adashe establishes a standardized industry framework for trade,
+                        finance, data and for adoption of blockchain and crypto.</p>
+                    <div
+                        class="grid grid-cols-2 mt-[57px] gap-[26.79px] max-w-[560p] w-full max-lg:mx-auto max-sm:grid-cols-1 max-sm:mt-[30px]">
+                        <div
+                            class="flex gap-[16.87px] items-center cursor-pointer hover:translate-y-[-5px] duration-[0.3s] max-lg:mx-auto">
+                            <img src="/src/images/svg/bounty.svg" alt="bounty">
+                            <p class=" max-xl:text-center max-md:text-[12px]">Bounty Program</p>
+                        </div>
+                        <div
+                            class="flex gap-[16.87px]  items-center cursor-pointer hover:translate-y-[-5px] duration-[0.3s] max-lg:mx-auto">
+                            <img src="/src/images/svg/website.svg" alt="website">
+                            <p class=" max-xl:text-center max-md:text-[12px]">Website and Apps</p>
+                        </div>
+                        <div
+                            class="flex gap-[16.87px]  items-center cursor-pointer hover:translate-y-[-5px] duration-[0.3s] max-lg:mx-auto">
+                            <img src="/src/images/svg/contract.svg" alt="contract">
+                            <p class=" max-xl:text-center max-md:text-[12px]">Smart Contract Audit</p>
+                        </div>
+                        <div
+                            class="flex gap-[16.87px]  items-center cursor-pointer hover:translate-y-[-5px] duration-[0.3s] max-lg:mx-auto">
+                            <img src="/src/images/svg/kyc.svg" alt="kyc">
+                            <p class=" max-xl:text-center max-md:text-[12px]">Team KYC</p>
+                        </div>
+                    </div>
+                </article>
+                <aside class="max-lg:mt-[50px]">
+                    <div class="items-center cursor-pointer opacity-[0.5] hover:opacity-[1] duration-[0.3s]">
+                        <div class="flex items-center gap-[6.95px]">
+                            <img src="/src/images/svg/dot.svg" alt="dot">
+                            <p
+                                class="leading-[100%] font-[600] text-[15.88px] text-[rgba(32,24,123,1)]  max-md:text-[12px]">
+                                Website and
+                                Ecosystem Design</p>
+                        </div>
+                        <img class="translate-x-[15px]" src="/src/images/svg/arrow.svg" alt="arrow">
+                    </div>
+                    <div class="items-center cursor-pointer opacity-[0.5] hover:opacity-[1] duration-[0.3s]">
+                        <div class="flex items-center gap-[6.95px]">
+                            <img src="/src/images/svg/dot.svg" alt="dot">
+                            <p
+                                class="leading-[100%] font-[600] text-[15.88px] text-[rgba(32,24,123,1)]   max-md:text-[12px]">
+                                Smart Contract
+                            </p>
+                        </div>
+                        <img class="translate-x-[15px]" src="/src/images/svg/arrow.svg" alt="arrow">
+                    </div>
+                    <div class="items-center cursor-pointer opacity-[0.5] hover:opacity-[1] duration-[0.3s] ">
+                        <div class="flex items-center gap-[6.95px]">
+                            <img src="/src/images/svg/dot.svg" alt="dot">
+                            <p
+                                class="leading-[100%] font-[600] text-[15.88px] text-[rgba(32,24,123,1)]   max-md:text-[12px]">
+                                Token Presale
+                            </p>
+                        </div>
+                        <img class="translate-x-[15px]" src="/src/images/svg/arrow.svg" alt="arrow">
+                    </div>
+                    <div class="items-center cursor-pointer opacity-[0.5] hover:opacity-[1] duration-[0.3s]">
+                        <div class="flex items-center gap-[6.95px]">
+                            <img src="/src/images/svg/dot.svg" alt="dot">
+                            <p
+                                class="leading-[100%] font-[600] text-[15.88px] text-[rgba(32,24,123,1)]  max-md:text-[12px]">
+                                Exchange
+                                Listing</p>
+                        </div>
+                        <img class="translate-x-[15px]" src="/src/images/svg/arrow.svg" alt="arrow">
+                    </div>
+                    <div class="items-center cursor-pointer opacity-[0.5] hover:opacity-[1] duration-[0.3s]">
+                        <div class="flex items-center gap-[6.95px]">
+                            <img src="/src/images/svg/dot.svg" alt="dot">
+                            <p
+                                class="leading-[100%] font-[600] text-[15.88px] text-[rgba(32,24,123,1)]   max-md:text-[12px]">
+                                DeFi Apps
+                                Launch</p>
+                        </div>
+                        <img class="translate-x-[15px]" src="/src/images/svg/arrow.svg" alt="arrow">
+                    </div>
+                    <div class="items-center cursor-pointer opacity-[0.5] hover:opacity-[1] duration-[0.3s]">
+                        <div class="flex items-center gap-[6.95px]">
+                            <img src="/src/images/svg/dot.svg" alt="dot">
+                            <p
+                                class="leading-[100%] font-[600] text-[15.88px] text-[rgba(32,24,123,1)]   max-md:text-[12px]">
+                                TradeFi and AI
+                                Trader Integration</p>
+                        </div>
+                        <img class="translate-x-[15px]" src="/src/images/svg/arrow.svg" alt="arrow">
+                    </div>
+                    <div class="items-center cursor-pointer opacity-[0.5] hover:opacity-[1] duration-[0.3s]">
+                        <div class="flex items-center gap-[6.95px]">
+                            <img src="/src/images/svg/dot.svg" alt="dot">
+                            <p
+                                class="leading-[100%] font-[600] text-[15.88px] text-[rgba(32,24,123,1)]   max-md:text-[12px]">
+                                Custom
+                                Blockchain</p>
+                        </div>
+                        <img class="translate-x-[15px]" src="/src/images/svg/arrow.svg" alt="arrow">
+                    </div>
+                    <div class="items-center cursor-pointer opacity-[0.5] hover:opacity-[1] duration-[0.3s]">
+                        <div class="flex items-center gap-[6.95px]">
+                            <img src="/src/images/svg/dot.svg" alt="dot">
+                            <p
+                                class="leading-[100%] font-[600] text-[15.88px] text-[rgba(32,24,123,1)]  max-md:text-[12px]">
+                                ATTOS Fork
+                                and App Full Deployment</p>
+                        </div>
+
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- core-partner-section -->
+        <section class="bg-[linear-gradient(to_right,rgba(32,24,123,1),rgba(132,58,178,1))]">
+            <div
+                class="py-[136px] px-[12px]  max-xl:pt-[90px] max-xl:pb-[90px] max-md:pt-[50px] max-md:pb-[40px] max-sm:pt-[40px] max-sm:pb-[30px]">
+                <div>
+                    <h2 class="text-white font-[700] text-[59.54px] text-center max-xl:text-[52px] max-md:text-[32px]">
+                        Core Partner</h2>
+                    <p
+                        class="font-[500] text-[14.88px] leading-[220.00000000000003%] text-white text-center mx-auto pt-[5px] max-w-[637px] w-full max-lg:text-[12px]">
+                        Adashe is a
+                        seamless fusion of
+                        Tradefi, DeFi, and Data
+                        systems, It
+                        is the future of Money, It is
+                        available across multiple Blockchains.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-[34px] mt-[48px]">
+                    <div
+                        class="flex max-md:flex-col items-center gap-[24px] px-[13px] py-[13px] bg-[rgba(106,89,191,0.35)] max-w-[452px] w-full rounded-[8px]">
+                        <img class="bg-white px-[20px] py-[5px] rounded-[10px] max-lg:w-[60px]"
+                            src="/src/images/png/travel-avetar.png" alt="travel-avetar">
+                        <div class="">
+                            <h3
+                                class="text-white max-md:text-center font-[700] text-[20px]  max-md:text-[16px] leading-[220.00000000000003%]">
+                                Travel Avater
+                            </h3>
+                            <p
+                                class="text-white max-md:text-center leading-[190%] font-[500] max-md:text-[12px] text-[14px] ">
+                                Comprehensive Travel
+                                Solution</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex max-md:flex-col items-center gap-[24px] px-[13px] py-[13px] bg-[rgba(106,89,191,0.35)] max-w-[452px] w-full rounded-[8px]">
+                        <img class=" rounded-[10px] max-lg:w-[50px]" src="/src/images/png/pal-remit.png"
+                            alt="pal-remit">
+                        <div class="">
+                            <h3
+                                class="text-white max-md:text-center font-[700] text-[20px] max-md:text-[16px] leading-[220.00000000000003%]">
+                                PalRemit
+                            </h3>
+                            <p
+                                class="text-white max-md:text-center leading-[190%] font-[500] max-md:text-[12px] text-[14px] ">
+                                Borderless,
+                                Cheap remittances
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex max-md:flex-col items-center gap-[24px] px-[13px] py-[13px] bg-[rgba(106,89,191,0.35)] max-w-[452px] w-full rounded-[8px]">
+                        <img class=" rounded-[10px] max-lg:w-[50px]" src="/src/images/png/raze-finance.png"
+                            alt="raze-finance">
+                        <div class="">
+                            <h3
+                                class="text-white max-md:text-center font-[700] text-[20px] max-md:text-[16px] leading-[220.00000000000003%]">
+                                Raze Finance
+                            </h3>
+                            <p
+                                class="text-white max-md:text-center leading-[190%] font-[500] max-md:text-[12px] text-[14px] ">
+                                A Fund
+                                raising platform</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- smart-contract-section -->
+        <section class="bg-[url(src/images/png/smart-contract.png)]">
+            <div
+                class="max-w-[1626px] w-full mx-auto px-[12px] pt-[139px] pb-[171px]  max-xl:pt-[90px] max-xl:pb-[90px] max-md:pt-[50px] max-md:pb-[40px] max-sm:pt-[40px] max-sm:pb-[30px]">
+                <h2 class=" text-[rgba(79,59,229,1)] text-[60px] font-[700] max-xl:text-[52px] max-xl:justify-center
+                flex max-md:text-[32px]">
+                    Smart Contract</h2>
+                <p
+                    class="max-w-[522px] w-full font-[500] text-[15px] leading-[220.00000000000003%] max-xl:mx-auto max-xl:text-center max-md:text-[12px] ">
+                    Adashe is a seamless fusion of Tradefi, DeFi, and Data systems, It is the future of Money, It is
+                    available across multiple Blockchains.</p>
+                <div
+                    class="grid grid-cols-4 mt-[64px] max-md:mt-[40px] max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-[20px]">
+                    <div
+                        class="flex gap-[18px] items-start max-w-[361px]  w-full mx-auto max-sm:flex-col cursor-pointer hover:translate-y-[-5px] duration-[0.3s]">
+                        <img class=" max-sm:mx-auto" src="/src/images/svg/farming.svg" alt="farming">
+                        <div>
+                            <h3
+                                class="text-[rgba(32,24,123,1)] text-[20px] font-[700] leading-[220.00000000000003%] max-lg:text-[26px] max-md:text-[18px] max-sm:text-center">
+                                Farming</h3>
+                            <p class="text-[14px] font-[500] leading-[190%]  max-md:text-[12px] max-sm:text-center">
+                                Adashe is a seamless fusion of Tradefi, DeFi, and Data systems, It is the future of
+                                Money.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex gap-[18px] items-start max-w-[361px] w-full mx-auto max-sm:flex-col cursor-pointer hover:translate-y-[-5px] duration-[0.3s]">
+                        <img class=" max-sm:mx-auto" src="/src/images/svg/vesting.svg" alt="vesting">
+                        <div>
+                            <h3
+                                class="text-[rgba(32,24,123,1)] text-[20px] font-[700] leading-[220.00000000000003%] max-lg:text-[26px] max-md:text-[18px] max-sm:text-center">
+                                Vesting</h3>
+                            <p class="text-[14px] font-[500] leading-[190%]  max-md:text-[12px] max-sm:text-center">
+                                Adashe is a seamless fusion of Tradefi, DeFi, and Data systems, It is the future of
+                                Money.
+                        </div>
+                    </div>
+                    <div
+                        class="flex gap-[18px] items-start max-w-[361px] w-full mx-auto max-sm:flex-col cursor-pointer hover:translate-y-[-5px] duration-[0.3s]">
+                        <img class=" max-sm:mx-auto" src="/src/images/svg/sales.svg" alt="sales">
+                        <div>
+                            <h3
+                                class="text-[rgba(32,24,123,1)] text-[20px] font-[700] leading-[220.00000000000003%] max-lg:text-[26px] max-md:text-[18px] max-sm:text-center">
+                                Sales</h3>
+                            <p class="text-[14px] font-[500] leading-[190%]  max-md:text-[12px] max-sm:text-center">
+                                Adashe is a seamless
+                                fusion of Tradefi,
+                                DeFi,
+                                and Data systems, It is the future of Money.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex gap-[18px] items-start max-w-[361px] w-full mx-auto max-sm:flex-col cursor-pointer hover:translate-y-[-5px] duration-[0.3s]">
+                        <img class=" max-sm:mx-auto" src="/src/images/svg/yoken.svg" alt="yoken">
+                        <div>
+                            <h3
+                                class="text-[rgba(32,24,123,1)] text-[20px] font-[700] leading-[220.00000000000003%] max-lg:text-[26px] max-md:text-[18px] max-sm:text-center">
+                                Token</h3>
+                            <p class="text-[14px] font-[500] leading-[190%]  max-md:text-[12px] max-sm:text-center">
+                                Adashe is a seamless
+                                fusion of Tradefi,
+                                DeFi,
+                                and Data systems, It is the future of Money.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- adse-defi-section -->
+        <section class="bg-[url(src/images/png/adse-bg.png)]">
+            <div
+                class="max-w-[1626px] w-full mx-auto px-[12px] pt-[90px] pb-[122px]  max-xl:pt-[90px] max-xl:pb-[90px] max-md:pt-[50px] max-md:pb-[40px] max-sm:pt-[40px] max-sm:pb-[30px]">
+                <h2
+                    class="text-[rgba(79,59,229,1)] font-[700] text-[60px] leading-[100%] max-xl:text-[52px] max-xl:justify-center flex max-md:text-[32px]">
+                    ADSE DeFi</h2>
+                <p
+                    class="font-[500] leading-[229.99999999999997%] max-w-[1581px] mt-[10px]  max-xl:text-center max-md:text-[12px]">
+                    Adashe DeFi is a
+                    fine mix of
+                    traditional banking and
+                    finance with the convenience and accessibility
+                    of
+                    crypto which allows it to be potentially more profitable than traditional banking but much more
+                    secure
+                    than any other DeFi platforms. Our DeFi services and returns are protected by an Insurance policy to
+                    minimize risk for customers. Support of this standard guarantees the compatibility of the token with
+                    third-party services (wallets, exchanges, listings, etc.), and provides easy integration.</p>
+                <div class="flex justify-between max-xl:flex-col pt-[63px] max-w-[1524px] w-full">
+                    <article class="max-w-[783px] w-full pb-[38px] max-xl:text-center max-xl:mx-auto ">
+                        <p
+                            class="leading-[220.00000000000003%] font-[500] pb-[30px]  max-xl:text-center max-md:text-[12px]">
+                            <span
+                                class="text-[22px] font-[700] text-[rgba(32,24,123,1)]  max-xl:text-center max-md:text-[12px]">Banking:</span>
+                            Bank
+                            your Stable Coin or
+                            ADSE and
+                            access it via our debit card, withdraw or
+                            deposit cash
+                            via ATM.
+                        </p>
+                        <p
+                            class="leading-[220.00000000000003%] font-[500] pb-[30px]  max-xl:text-center max-md:text-[12px]">
+                            <span
+                                class="text-[22px] font-[700] text-[rgba(32,24,123,1)]  max-xl:text-center max-md:text-[12px]">Staking:
+                            </span> Stake the LP
+                            tokens from our DeFi or other AMM platforms and earn LP staking rewards up to 10%.
+                        </p>
+                        <p
+                            class="leading-[220.00000000000003%] font-[500] pb-[30px]  max-xl:text-center max-md:text-[12px]">
+                            <span
+                                class="text-[22px] font-[700] text-[rgba(32,24,123,1)] max-xl:text-center max-md:text-[12px] ">Lending:</span>
+                            Lend
+                            your Adashe tokens to any one of our selected third party borrowers for different annual
+                            APY.
+                        </p>
+                        <p
+                            class="leading-[220.00000000000003%] font-[500] pb-[30px]  max-xl:text-center max-md:text-[12px]">
+                            <span
+                                class="text-[22px] font-[700] text-[rgba(32,24,123,1)]  max-xl:text-center max-md:text-[12px]">Farming:</span>
+                            Farm
+                            your ADSE with pairs of other cryptocurrencies to help provide liquidity, earn transaction
+                            fees.
+                        </p>
+                        <p class="leading-[220.00000000000003%] font-[500]  max-xl:text-center max-md:text-[12px]"><span
+                                class="text-[22px] font-[700] text-[rgba(32,24,123,1)]  max-xl:text-center max-md:text-[12px]">Donate:</span>
+                            Donate
+                            anonymously to featured projects, charities, causes, and individuals, at no platform fees.
+                        </p>
+                    </article>
+                    <aside class="bg-[rgba(246,249,252,1)] rounded-[9px] overflow-hidden">
+                        <div
+                            class="flex max-md:flex-col max-xl:justify-center gap-[71px] max-sm:gap-[30px] pt-[48px] px-[58px] pb-[42px] border-b-[2px_solid_#DFDFDF] justify-start">
+                            <img class="max-xl:w-[170px] max-md:w-[100px] max-md:mx-auto"
+                                src="/src/images/svg/data-circle.svg" alt="data-circle">
+                            <div class="max-md:mx-auto">
+                                <p
+                                    class="flex leading-[220.00000000000003%]  max-xl:text-center max-md:text-[12px] font-[600] text-[18.1px] gap-[12.34px] pb-[10px] text-[#5A556B]">
+                                    <img class="w-[11.520833015441895px]" src="/src/images/svg/data-dot.svg"
+                                        alt="">Reserves: 63.78%
+                                </p>
+                                <p
+                                    class="flex leading-[220.00000000000003%]  max-xl:text-center max-md:text-[12px] font-[600] text-[18.1px] gap-[12.34px] pb-[10px]  text-[#5A556B]">
+                                    <img class="w-[11.520833015441895px]" src="/src/images/svg/dot-2.svg" alt="">Initial
+                                    Token Sales: 21.78%
+                                </p>
+                                <p
+                                    class="flex leading-[220.00000000000003%]  max-xl:text-center max-md:text-[12px] font-[600] text-[18.1px] gap-[12.34px] pb-[10px]  text-[#5A556B]">
+                                    <img class="w-[11.520833015441895px]" src="/src/images/svg/dot-3.svg"
+                                        alt="">Marketing: 2.5%
+                                </p>
+                                <p
+                                    class="flex leading-[220.00000000000003%]  max-xl:text-center max-md:text-[12px] font-[600] text-[18.1px] gap-[12.34px] pb-[10px]  text-[#5A556B]">
+                                    <img class="w-[11.520833015441895px]" src="/src/images/svg/dot-4.svg" alt="">Partner
+                                    recruitment: 5%
+                                </p>
+                                <p
+                                    class="flex leading-[220.00000000000003%]  max-xl:text-center max-md:text-[12px] font-[600] text-[18.1px] gap-[12.34px]  text-[#5A556B]">
+                                    <img class="w-[11.520833015441895px]" src="/src/images/svg/dot-5.svg" alt="">Team
+                                    Allocation: 7%
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-[49px] pt-[24px] pb-[36px]">
+                            <p
+                                class="leading-[220.00000000000003%] pb-[10px]  max-xl:text-center max-md:text-[12px] font-[600] text-[18.1px]  text-[#5A556B]">
+                                Initial Minted
+                                Token:
+                                4,637,000,000</p>
+                            <p
+                                class="leading-[220.00000000000003%] font-[600]  max-xl:text-center max-md:text-[12px] text-[18.1px]  text-[#5A556B]">
+                                Initial Token Supply:
+                                10,000,000,000
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+                <div class="flex max-xl:justify-center">
+                    <button
+                        class=" mt-[38px] text-[#5953EF] font-[700] bg-[transparent] border-[2px] rounded-[36px] px-[44px] py-[20px] hover:translate-y-[-5px] duration-[0.5s] cursor-pointer max-md:text-[12px] max-md:px-[11px] max-md:py-[11px]">VIEW
+                        CHAIN EXPLORER</button>
+                </div>
+            </div>
+        </section>
+        <!-- faq-section -->
+        <section class="bg-[url(src/images/png/faq-bg.png)]" id="faq">
+            <div
+                class="max-w-[1626px] w-full mx-auto px-[12px] pt-[79px] pb-[273.22px]  max-xl:pt-[90px] max-xl:pb-[90px] max-md:pt-[50px] max-md:pb-[40px] max-sm:pt-[40px] max-sm:pb-[30px]">
+                <h2
+                    class="text-[#4F3BE5] pb-[70px] max-lg:pb-[50px] max-md:pb-[30px] text-[60px] font-[700] leading-[100%] max-xl:text-[52px] justify-center flex max-md:text-[32px]">
+                    FAQ’s</h2>
+                <div class="pb-[16px]">
+                    <dt class="max-w-[1098px] w-full flex justify-between mx-auto px-[30px] py-[17px] border-[2px] rounded-[10px] border-[#DCDCDC]"
+                        aria-controls="faq-1">
+                        <p class="font-[500] text-[18px] lea[170%]  max-md:text-[12px]">Why did we
+                            create project Adashe ? </p>
+                        <img class=" cursor-pointer active:rotate-[200deg] duration-[0.5s]"
+                            src="/src/images/svg/faq-data-arrow.svg" alt="faq-data-arrow">
+                    </dt>
+                    <dd class="mt-[25px] max-w-[1098px] w-full mx-auto hidden  max-xl:text-center max-md:text-[12px]"
+                        id="faq-1">
+                        We saw the need for a dedicated system for transacting globally both for enterprise and personal
+                        purposes. We saw the need to ensure this system is as secure as possible, on an architectural,
+                        physical, and software level. Our marquee project is a Database solution that ties into our
+                        smart contract and blockchain and aims at solving key issues around data, tracking, and
+                        simulations. Adashe ecosystem will consist of businesses and projects designed to foster
+                        decentralization, security, financial growth, and convenience.
+                    </dd>
+                </div>
+                <div class="pb-[16px]">
+                    <dt class="max-w-[1098px] w-full flex justify-between mx-auto px-[30px] py-[17px] border-[2px] rounded-[10px] border-[#DCDCDC]"
+                        aria-controls="faq-1">
+                        <p class="font-[500] text-[18px] lea[170%]  max-md:text-[12px]">Why is
+                            Project Adashe important? </p>
+                        <img class=" cursor-pointer active:rotate-[200deg] duration-[0.5s]"
+                            src="/src/images/svg/faq-data-arrow.svg" alt="faq-data-arrow">
+                    </dt>
+                    <dd class="mt-[25px] max-w-[1098px] w-full mx-auto hidden  max-xl:text-center max-md:text-[12px]"
+                        id="faq-1">
+                        We saw the need for a dedicated system for transacting globally both for enterprise and personal
+                        purposes. We saw the need to ensure this system is as secure as possible, on an architectural,
+                        physical, and software level. Our marquee project is a Database solution that ties into our
+                        smart contract and blockchain and aims at solving key issues around data, tracking, and
+                        simulations. Adashe ecosystem will consist of businesses and projects designed to foster
+                        decentralization, security, financial growth, and convenience.
+                    </dd>
+                </div>
+                <div class="pb-[16px]">
+                    <dt class="max-w-[1098px] w-full flex justify-between mx-auto px-[30px] py-[17px] border-[2px] rounded-[10px] border-[#DCDCDC]"
+                        aria-controls="faq-1">
+                        <p class="font-[500] text-[18px] lea[170%]  max-md:text-[12px]">What benefits
+                            does holding ADSE give an investor? </p>
+                        <img class=" cursor-pointer active:rotate-[200deg] duration-[0.5s]"
+                            src="/src/images/svg/faq-data-arrow.svg" alt="faq-data-arrow">
+                    </dt>
+                    <dd class="mt-[25px] max-w-[1098px] w-full mx-auto hidden  max-xl:text-center max-md:text-[12px]"
+                        id="faq-1">
+                        We saw the need for a dedicated system for transacting globally both for enterprise and personal
+                        purposes. We saw the need to ensure this system is as secure as possible, on an architectural,
+                        physical, and software level. Our marquee project is a Database solution that ties into our
+                        smart contract and blockchain and aims at solving key issues around data, tracking, and
+                        simulations. Adashe ecosystem will consist of businesses and projects designed to foster
+                        decentralization, security, financial growth, and convenience.
+                    </dd>
+                </div>
+                <div class="pb-[16px]">
+                    <dt class="max-w-[1098px] w-full flex justify-between mx-auto px-[30px] py-[17px] border-[2px] rounded-[10px] border-[#DCDCDC]"
+                        aria-controls="faq-1">
+                        <p class="font-[500] text-[18px] lea[170%]  max-md:text-[12px]">Which
+                            technology stack are we going to use?</p>
+                        <img class=" cursor-pointer active:rotate-[200deg] duration-[0.5s]"
+                            src="/src/images/svg/faq-data-arrow.svg" alt="faq-data-arrow">
+                    </dt>
+                    <dd class="mt-[25px] max-w-[1098px] w-full mx-auto hidden  max-xl:text-center max-md:text-[12px]"
+                        id="faq-1">
+                        We saw the need for a dedicated system for transacting globally both for enterprise and personal
+                        purposes. We saw the need to ensure this system is as secure as possible, on an architectural,
+                        physical, and software level. Our marquee project is a Database solution that ties into our
+                        smart contract and blockchain and aims at solving key issues around data, tracking, and
+                        simulations. Adashe ecosystem will consist of businesses and projects designed to foster
+                        decentralization, security, financial growth, and convenience.
+                    </dd>
+                </div>
+                <div class="pb-[16px]">
+                    <dt class="max-w-[1098px] w-full flex justify-between mx-auto px-[30px] py-[17px] border-[2px] rounded-[10px] border-[#DCDCDC]"
+                        aria-controls="faq-1">
+                        <p class="font-[500] text-[18px] lea[170%]  max-md:text-[12px]">What are
+                            other benefits for society?</p>
+                        <img class=" cursor-pointer active:rotate-[200deg] duration-[0.5s]"
+                            src="/src/images/svg/faq-data-arrow.svg" alt="faq-data-arrow">
+                    </dt>
+                    <dd class="mt-[25px] max-w-[1098px] w-full mx-auto hidden  max-xl:text-center max-md:text-[12px]"
+                        id="faq-1">
+                        We saw the need for a dedicated system for transacting globally both for enterprise and personal
+                        purposes. We saw the need to ensure this system is as secure as possible, on an architectural,
+                        physical, and software level. Our marquee project is a Database solution that ties into our
+                        smart contract and blockchain and aims at solving key issues around data, tracking, and
+                        simulations. Adashe ecosystem will consist of businesses and projects designed to foster
+                        decentralization, security, financial growth, and convenience.
+                    </dd>
+                </div>
+                <div class="pb-[16px]">
+                    <dt class="max-w-[1098px] w-full flex justify-between mx-auto px-[30px] py-[17px] border-[2px] rounded-[10px] border-[#DCDCDC]"
+                        aria-controls="faq-1">
+                        <p class="font-[500] text-[18px] lea[170%]  max-md:text-[12px]">What is the
+                            business value behind the project and its advantages for others?</p>
+                        <img class=" cursor-pointer active:rotate-[200deg] duration-[0.5s]"
+                            src="/src/images/svg/faq-data-arrow.svg" alt="faq-data-arrow">
+                    </dt>
+                    <dd class="mt-[25px] max-w-[1098px] w-full mx-auto hidden  max-xl:text-center max-md:text-[12px]"
+                        id="faq-1">
+                        We saw the need for a dedicated system for transacting globally both for enterprise and personal
+                        purposes. We saw the need to ensure this system is as secure as possible, on an architectural,
+                        physical, and software level. Our marquee project is a Database solution that ties into our
+                        smart contract and blockchain and aims at solving key issues around data, tracking, and
+                        simulations. Adashe ecosystem will consist of businesses and projects designed to foster
+                        decentralization, security, financial growth, and convenience.
+                    </dd>
+                </div>
+                <div class="pb-[16px]">
+                    <dt class="max-w-[1098px] w-full flex justify-between mx-auto px-[30px] py-[17px] border-[2px] rounded-[10px] border-[#DCDCDC]"
+                        aria-controls="faq-1">
+                        <p class="font-[500] text-[18px] lea[170%]  max-md:text-[12px]">What
+                            Blockchain will Adashe run on?</p>
+                        <img class=" cursor-pointer active:rotate-[200deg] duration-[0.5s]"
+                            src="/src/images/svg/faq-data-arrow.svg" alt="faq-data-arrow">
+                    </dt>
+                    <dd class="mt-[25px] max-w-[1098px] w-full mx-auto hidden  max-xl:text-center max-md:text-[12px]"
+                        id="faq-1">
+                        We saw the need for a dedicated system for transacting globally both for enterprise and personal
+                        purposes. We saw the need to ensure this system is as secure as possible, on an architectural,
+                        physical, and software level. Our marquee project is a Database solution that ties into our
+                        smart contract and blockchain and aims at solving key issues around data, tracking, and
+                        simulations. Adashe ecosystem will consist of businesses and projects designed to foster
+                        decentralization, security, financial growth, and convenience.
+                    </dd>
+                </div>
+                <div class="pb-[16px]">
+                    <dt class="max-w-[1098px] w-full flex justify-between mx-auto px-[30px] py-[17px] border-[2px] rounded-[10px] border-[#DCDCDC]"
+                        aria-controls="faq-1">
+                        <p class="font-[500] text-[18px] lea[170%]  max-md:text-[12px]">What are the
+                            applications for the Adashe Sat/Blockchain?</p>
+                        <img class=" cursor-pointer active:rotate-[200deg] duration-[0.5s]"
+                            src="/src/images/svg/faq-data-arrow.svg" alt="faq-data-arrow">
+                    </dt>
+                    <dd class="mt-[25px] max-w-[1098px] w-full mx-auto hidden  max-xl:text-center max-md:text-[12px]"
+                        id="faq-1">
+                        We saw the need for a dedicated system for transacting globally both for enterprise and personal
+                        purposes. We saw the need to ensure this system is as secure as possible, on an architectural,
+                        physical, and software level. Our marquee project is a Database solution that ties into our
+                        smart contract and blockchain and aims at solving key issues around data, tracking, and
+                        simulations. Adashe ecosystem will consist of businesses and projects designed to foster
+                        decentralization, security, financial growth, and convenience.
+                    </dd>
+                </div>
+
+            </div>
+        </section>
+        <!-- our-team-section -->
+        <section class="bg-[#F6F9FC]" id="team">
+            <div
+                class="max-w-[1544px] w-full mx-auto px-[12px] pt-[140px] pb-[171.35px] max-xl:pt-[90px] max-xl:pb-[90px] max-md:pt-[50px] max-md:pb-[40px] max-sm:pt-[40px] max-sm:pb-[30px]">
+                <div>
+                    <h2
+                        class="text-center text-[#4F3BE5] text-[60px] font-[700] leading-[100%] mx-auto max-lg:text-[26px] max-md:text-[18px]">
+                        Our Team</h2>
+                    <p
+                        class="text-center font-[500] text-[rgba(90,85,107,1)] leading-[165%]  max-lg:text-[12px] pt-[9px] max-w-[625px] w-full mx-auto">
+                        Our
+                        success stems from the
+                        leadership, professionalism
+                        and vision of our
+                        management and staff.</p>
+                </div>
+                <div
+                    class="grid grid-cols-3 max-xl:grid-cols-2 max-sm:grid-cols-1 mt-[55px] gap-[30px] max-w-[1452px] w-full mx-auto">
+                    <div
+                        class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px] w-full bg-[#FFFFFF] rounded-[12px] mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
+                        <img src="/src/images/png/card-person.png" alt="card-person">
+                        <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
+                            <div class="flex justify-between">
+                                <h3
+                                    class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
+                                    Othniel Mbamalu
+                                    <span class="font-[Jost] font-[500] text-[16px] italic">CEO</span>
+                                </h3>
+                                <a href="#"> <img class="max-w-[464px] w-full" src="/src/images/svg/linkedin.svg"
+                                        alt="linkedin"></a>
+                            </div>
+                            <p class="leading-[187%] text-[14px] pt-[8px] max-lg:text-[12px] text-[rgba(90,85,107,1)]">
+                                An Aerospace Inventor with
+                                multiple US
+                                patents and an
+                                innovator in
+                                multiple spaces
+                                including
+                                Blockchain and Crypto</p>
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
+                        <img class="rounded-tr-[12px] rounded-tl-[12px]" src="/src/images/png/image 23.png"
+                            alt="card-person-second">
+                        <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
+                            <div class="flex justify-between">
+                                <h3
+                                    class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
+                                    Gerald Monroe
+
+                                    <span class="font-[Jost] font-[500] text-[16px] italic">CTO</span>
+                                </h3>
+                                <a href="#"> <img class="max-w-[464px] w-full" src="/src/images/svg/linkedin.svg"
+                                        alt="linkedin"></a>
+                            </div>
+                            <p class="leading-[187%] text-[14px] pt-[8px] max-lg:text-[12px] text-[rgba(90,85,107,1)]">
+                                Gerald has over 10 years
+                                of experience as a
+                                senior blockchain developer and has served as a C-Level Member and advisor to several
+                                industry-leading blockchain projects. </p>
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
+                        <img class="rounded-tr-[12px] rounded-tl-[12px]" src="/src/images/png/card-person-third.png"
+                            alt="card-person-third">
+                        <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
+                            <div class="flex justify-between">
+                                <h3
+                                    class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
+                                    Quivira. Ophir
+
+                                    <span class="font-[Jost] font-[500] text-[16px] italic">Chief Marketing
+                                        Officer</span>
+                                </h3>
+                                <a href="#"> <img class="max-w-[464px] w-full" src="/src/images/svg/linkedin.svg"
+                                        alt="linkedin"></a>
+                            </div>
+                            <p class="leading-[187%] text-[14px] pt-[8px] max-lg:text-[12px] text-[rgba(90,85,107,1)]">
+                                One of Africa's top crypto
+                                influencers,
+                                Quivira's skills extend beyond marketing into programming and business management</p>
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
+                        <img class="rounded-tr-[12px] rounded-tl-[12px]" src="/src/images/png/card-person-third.png"
+                            alt="card-person-fourth">
+                        <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
+                            <div class="flex justify-between">
+                                <h3
+                                    class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
+                                    Carl Tautenhahn
+
+                                    <span class="font-[Jost] font-[500] text-[16px] italic">CFO</span>
+                                </h3>
+                                <a href="#"> <img class="max-w-[464px] w-full" src="/src/images/svg/linkedin.svg"
+                                        alt="linkedin"></a>
+                            </div>
+                            <p class="leading-[187%] text-[14px] pt-[8px] max-lg:text-[12px] text-[rgba(90,85,107,1)]">
+                                Carl has been active in
+                                blockchain technology
+                                and crypto since 2012. With a background in Graph Theory and advanced optimization
+                                algorithms, Carl has co-funded and serves as an advisor to several pioneering Web3
+                                projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-[58px] pt-[45px]">
+                    <h2
+                        class="text-center text-[#4F3BE5] text-[60px] font-[700] leading-[100%] mx-auto max-lg:text-[26px] max-md:text-[18px]">
+                        Advisors</h2>
+                    <p
+                        class="text-center font-[500] leading-[165%]  max-lg:text-[12px] pt-[9px] text-[rgba(90,85,107,1)] max-w-[625px] w-full mx-auto">
+                        Our success stems from the leadership, professionalism and vision of our management and staff.
+                    </p>
+                </div>
+                <div class="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-[31px]">
+                    <div class="max-w-[362px] max-lg:max-w-[300px] max-md:max-w-[200px]  w-full mx-auto">
+                        <img src="/src/images/png/perkilis.png" alt="perkilis">
+                        <div class="flex justify-between px-[5px] pt-[24px]">
+                            <h3
+                                class="  text-[rgba(90,85,107,1)] font-[700] text-[20px] max-sm:text-[12px] leading-[100%]  font-[Jost]">
+                                Periklis
+                                Papadopoulos</h3>
+                            <a href="#"><img src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="max-w-[362px] max-lg:max-w-[300px] max-md:max-w-[200px]  w-full mx-auto">
+                        <img src="/src/images/png/jon.png" alt="jon">
+                        <div class="flex justify-between px-[5px] pt-[24px]">
+                            <h3
+                                class="font-[700] text-[20px] max-sm:text-[12px] leading-[100%]  font-[Jost]  text-[rgba(90,85,107,1)]">
+                                Jon Gillon
+                            </h3>
+                            <a href="#"><img src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="max-w-[362px] max-lg:max-w-[300px] max-md:max-w-[200px]  w-full mx-auto">
+                        <img src="/src/images/png/nick.png" alt="nick">
+                        <div class="flex justify-between px-[5px] pt-[24px]">
+                            <h3
+                                class="font-[700] text-[20px] max-sm:text-[12px] leading-[100%]  font-[Jost]  text-[rgba(90,85,107,1)]">
+                                Nick
+                                Raffin</h3>
+                            <a href="#"><img src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="max-w-[362px] max-lg:max-w-[300px] max-md:max-w-[200px]  w-full mx-auto">
+                        <img src="/src/images/png/uzo.png" alt="uzo">
+                        <div class="flex justify-between px-[5px] pt-[24px]">
+                            <h3
+                                class="font-[700] text-[20px] max-sm:text-[12px] leading-[100%]  font-[Jost]  text-[rgba(90,85,107,1)]">
+                                Uzochukwu
+                                Mbamalu</h3>
+                            <a href="#"><img src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- latest-news-section -->
+        <section class=" bg-[url(sec/images/png/new-bg.png)]">
+            <div
+                class=" max-w-[1585px] w-full mx-auto px-[12px] pt-[145px] pb-[165px]  max-xl:pt-[90px] max-xl:pb-[90px] max-md:pt-[50px] max-md:pb-[40px] max-sm:pt-[40px] max-sm:pb-[30px]">
+                <h2
+                    class="text-[#4F3BE5] text-[60px] max-lg:text-center font-[700] leading-[100%] mx-auto max-lg:text-[26px] max-md:text-[18px] pb-[79px] max-md:pb-[50px] max-sm:pb-[35px] ">
+                    Latest News</h2>
+                <div class="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1  mx-auto gap-[53px]">
+                    <div
+                        class="rounded-[10px] shadow-[13px_13px_60px_0_#0000001A] cursor-pointer max-w-[493px] max-lg:max-w-[350px] max-md:max-w-[200px] mx-auto hover:translate-y-[-8px] duration-[0.5s]">
+                        <img class="rounded-[10px]" src="/src/images/png/trade-phone.png" alt="trade-phone">
+                        <div class="py-[30px] px-[30px]">
+                            <p class="font-[700] text-[28px] leading-[170%] max-lg:text-[12px]">New Features in Adashe
+                                2.0</p>
+                            <a href="#"
+                                class="text-[#263FDE] font-[700] text-[15px] leading-[170%] max-lg:text-[12px]">View
+                                Details</a>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-[10px] shadow-[13px_13px_60px_0_#0000001A] cursor-pointer max-w-[493px] max-lg:max-w-[350px] max-md:max-w-[200px]  mx-auto hover:translate-y-[-8px] duration-[0.5s]">
+                        <img class="rounded-[10px]" src="/src/images/png/defi.png" alt="defi">
+                        <div class="py-[30px] px-[30px]">
+                            <p class="font-[700] text-[28px] leading-[170%] max-lg:text-[12px]">New Features in Adashe
+                                2.0</p>
+                            <a href="#"
+                                class="text-[#263FDE] font-[700] text-[15px] leading-[170%] max-lg:text-[12px]">View
+                                Details</a>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-[10px] shadow-[13px_13px_60px_0_#0000001A] cursor-pointer max-w-[493px] max-lg:max-w-[350px] max-md:max-w-[200px]  mx-auto hover:translate-y-[-8px] duration-[0.5s]">
+                        <img class="rounded-[10px]" src="/src/images/png/decent-finance.png" alt="decent-finance">
+                        <div class="py-[30px] px-[30px]">
+                            <p class="font-[700] text-[28px] leading-[170%] max-lg:text-[12px]">New Features in Adashe
+                                2.0</p>
+                            <a href="#"
+                                class="text-[#263FDE] font-[700] text-[15px] leading-[170%] max-lg:text-[12px]">View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- exchanges-section -->
+        <section class="bg-[linear-gradient(to_right,rgba(32,24,123,1),rgba(132,58,178,1))]" id="services">
+            <div
+                class="pt-[209px] pb-[148px] px-[12px] max-w-[1677px] w-full mx-auto  max-xl:pt-[90px] max-xl:pb-[90px] max-md:pt-[50px] max-md:pb-[40px] max-sm:pt-[40px] max-sm:pb-[30px]">
+                <div>
+                    <h2 class="text-white font-[700] text-[59.54px] text-center max-xl:text-[52px] max-md:text-[32px]">
+                        Exchanges</h2>
+                    <p
+                        class="font-[500] text-[14.88px] leading-[220.00000000000003%] text-white text-center mx-auto pt-[5px] max-w-[637px] w-full max-lg:text-[12px]">
+                        Adashe is a seamless fusion of Tradefi, DeFi, and Data systems, It is the future of Money, It is
+                        available across multiple Blockchains.</p>
+                </div>
+                <div
+                    class="grid grid-cols-4 mx-auto max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-[47px] mt-[54px]">
+                    <div
+                        class="flex mx-auto max-md:flex-col items-center gap-[24px] px-[13px] py-[13px] bg-[rgba(106,89,191,0.35)] max-w-[390px] w-full rounded-[8px]">
+                        <img class=" rounded-[10px] max-lg:w-[50px]" src="/src/images/svg/ex-one.svg" alt="pal-remit">
+                        <div class="">
+                            <h3
+                                class="text-white max-md:text-center font-[700] text-[20px] max-md:text-[16px] leading-[220.00000000000003%]">
+                                Travel Avater
+                            </h3>
+                            <p
+                                class="text-white max-md:text-center leading-[190%] font-[500] max-md:text-[12px] text-[14px] ">
+                                Borderless,
+                                Cheap remittances
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex mx-auto max-md:flex-col items-center gap-[24px] px-[13px] py-[13px] bg-[rgba(106,89,191,0.35)] max-w-[390px] w-full rounded-[8px]">
+                        <img class=" rounded-[10px] max-lg:w-[50px]" src="/src/images/svg/ex-two.svg"
+                            alt="raze-finance">
+                        <div class="">
+                            <h3
+                                class="text-white max-md:text-center font-[700] text-[20px] max-md:text-[16px] leading-[220.00000000000003%]">
+                                PalRemit
+                            </h3>
+                            <p
+                                class="text-white max-md:text-center leading-[190%] font-[500] max-md:text-[12px] text-[14px] ">
+                                A Fund
+                                raising platform</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex mx-auto max-md:flex-col items-center gap-[24px] px-[13px] py-[13px] bg-[rgba(106,89,191,0.35)] max-w-[390px] w-full rounded-[8px]">
+                        <img class=" rounded-[10px] max-lg:w-[50px]" src="/src/images/svg/ex-three.svg"
+                            alt="raze-finance">
+                        <div class="">
+                            <h3
+                                class="text-white max-md:text-center font-[700] text-[20px] max-md:text-[16px] leading-[220.00000000000003%]">
+                                Raze Finance
+                            </h3>
+                            <p
+                                class="text-white max-md:text-center leading-[190%] font-[500] max-md:text-[12px] text-[14px] ">
+                                A Fund
+                                raising platform</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex mx-auto max-md:flex-col items-center gap-[24px] px-[13px] py-[13px] bg-[rgba(106,89,191,0.35)] max-w-[390px] w-full rounded-[8px]">
+                        <img class=" rounded-[10px] max-lg:w-[50px]" src="/src/images/svg/ex-four.svg"
+                            alt="raze-finance">
+                        <div class="">
+                            <h3
+                                class="text-white max-md:text-center font-[700] text-[20px] max-md:text-[16px] leading-[220.00000000000003%]">
+                                Raze Finance
+                            </h3>
+                            <p
+                                class="text-white max-md:text-center leading-[190%] font-[500] max-md:text-[12px] text-[14px] ">
+                                A Fund
+                                raising platform</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto flex justify-center mt-[53px]">
+                    <button
+                        class="bg-[linear-gradient(to_right,rgba(255,255,255,1),rgba(162,51,242,1))] px-[31.92px] py-[14.76px] rounded-[26.11px] font-[700] text-[11.61px] hover:translate-y-[-9px] duration-[0.5s] cursor-pointer ">LOAD
+                        MORE</button>
+                </div>
+            </div>
+        </section>
+        <!-- featured-on-section -->
+        <section>
+            <div class="max-w-[1200px] w-full mx-auto pt-[68px] pb-[74px]">
+                <h2
+                    class="text-[rgba(79,59,229,1)] font-[700] text-[45px] text-center pb-[97px] max-lg:pb-[60px] max-sm:pb-[30px]  max-xl:text-[52px] max-md:text-[32px]">
+                    Featured On</h2>
+                <div class="flex gap-[65px] max-lg:gap-[40px] items-center justify-center flex-wrap">
+                    <a href="#"><img class="max-lg:w-[200px] max-md:w-[150px] max-md:w-[100px]"
+                            src="/src/images/svg/bing.svg" alt="bing"></a>
+                    <a href="#"><img class="max-lg:w-[200px] max-md:w-[150px] max-md:w-[100px]"
+                            src="/src/images/svg/google.svg" alt="google"></a>
+                    <a href="#"><img class="max-lg:w-[200px] max-md:w-[150px] max-md:w-[100px]"
+                            src="/src/images/svg/yahoo.svg" alt="yahoo"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main-end -->
+    <!-- footer-start -->
+    <footer>
+        <section class="bg-[rgba(221,234,255,0.3)]">
+            <div class="pb-[73px]">
+                <div class="bg-[url(src/images/jpg/Loan-sec-bg.jpg)] bg-no-repeat bg-cover  ">
+                    <div
+                        class="max-w-[1363.4px] w-full mx-auto px-[12px] max-lg:flex-wrap pt-[80px] pb-[95px] flex justify-between">
+                        <div class="max-lg:text-center max-lg:mx-auto">
+                            <h3
+                                class="text-[rgba(255,255,255,1)] font-[700] text-[50px] leading-[100%] pb-[10px] max-xl:text-[42px] max-md:text-[32px]">
+                                Stay
+                                Close,
+                                We Are
+                                Always Here</h3>
+                            <p
+                                class="text-[20px] font-[600] leading-[30px] text-[rgba(255,255,255,1)] mx-auto max-lg:text-[12px]">
+                                do you have
+                                questions?, Please get in touch with
+                                our friendly
+                                team.
+                            </p>
+                        </div>
+                        <div class=" max-lg:mx-auto max-lg:mt-[14px]">
+                            <button
+                                class=" items-center flex gap-[16px] rounded-[36px] bg-[linear-gradient(to_right,#423CE3,#8635ED)] cursor-pointer font-[700] text-white px-[44px] py-[20px] hover:translate-y-[-5px] duration-[0.5s] max-md:text-[12px] max-md:px-[11px] max-md:py-[11px]">
+                                Contact Us <img class="max-w-[19px] w-full" src="/src/images/svg/arrow-btn.svg"
+                                    alt="arrow-btn"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-[1566px] w-full mx-auto px-[12px] flex max-lg:flex-col justify-between mt-[68px]">
+                    <div
+                        class="max-w-[469px] max-lg:text-center max-lg:mx-auto  w-full font-[500] max-lg:text-[12px] text-[16px] leading-[192%]">
+                        <p class="">Project Adashe is building a system for data federation and virtualization, tied to
+                            a
+                            smart
+                            contract it can enable automatic execution of commands. </p>
+                        <div class="flex gap-[21.44px] pt-[20px] max-lg:justify-center">
+                            <a class="max-w-[40px] w-full hover:translate-y-[-5px] duration-[0.3s]" href="#"><img
+                                    src="/src/images/svg/footer-tw.svg" alt="twitter"></a>
+                            <a class="max-w-[40px] w-full hover:translate-y-[-5px] duration-[0.3s]" href="#"><img
+                                    src="/src/images/svg/footer-tg.svg" alt="telegram"></a>
+                            <a class="max-w-[40px] w-full hover:translate-y-[-5px] duration-[0.3s]" href="#"><img
+                                    src="/src/images/svg/footer-lin.svg" alt="linkedin"></a>
+                        </div>
+                    </div>
+                    <div
+                        class=" flex flex-wrap gap-[102px] max-lg:mx-auto max-lg:justify-center max-lg:mt-[22px] max-lg:gap-[90px] max-md:gap-[60px] max-sm:gap-[30px]">
+                        <div class="flex flex-col">
+                            <p class="text-[rgba(34,55,180,1)] text-[19px] font-[500] max-lg:text-[14px]">SITEMAP</p>
+                            <a class="text-[17px] font-[500] leading-[190%] pt-[10px] max-lg:text-[12px]"
+                                href="#">About</a>
+                            <a class="text-[17px] font-[500] leading-[190%] pt-[10px] max-lg:text-[12px]"
+                                href="#">Service</a>
+                            <a class="text-[17px] font-[500] leading-[190%] pt-[10px] max-lg:text-[12px]"
+                                href="#">Roadmap</a>
+                            <a class="text-[17px] font-[500] leading-[190%] pt-[10px] max-lg:text-[12px]"
+                                href="#">Team</a>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class=" text-[rgba(34,55,180,1)] text-[19px] font-[500] max-lg:text-[14px]">COMPANY</p>
+                            <a class="text-[17px] font-[500] leading-[190%] pt-[10px] max-lg:text-[12px]"
+                                href="#">Privacy
+                                Policy</a>
+                            <a class="text-[17px] font-[500] leading-[190%] pt-[10px] max-lg:text-[12px]"
+                                href="#">Careers</a>
+                            <a class="text-[17px] font-[500] leading-[190%] pt-[10px] max-lg:text-[12px]"
+                                href="#">Latest
+                                News</a>
+                            <a class="text-[17px] font-[500] leading-[190%] pt-[10px] max-lg:text-[12px]"
+                                href="#">FAQ’s</a>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class=" text-[rgba(34,55,180,1)] text-[19px] font-[500] max-lg:text-[14px]">LOCATION</p>
+                            <a class="text-[17px] font-[500] leading-[190%] flex gap-[10px] pt-[10px] max-lg:text-[12px]"
+                                href="#"><img src="/src/images/svg/star.svg" alt="star">Newport Beach, California</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-[1566px] w-full mx-auto px-[12px] flex max-lg:flex-col justify-between mt-[89px]">
+                    <div>
+                        <a href="#"><img class=" max-md:max-w-[160px] max-lg:mx-auto"
+                                src="/src/images/svg/adashe-logo.svg" alt="logo"></a>
+                        <p
+                            class="leading-[171%] text-[20px] font-[500] mt-[10px] text-[rgba(95,109,126,1)] max-lg:text-center max-md:text-[12px]">
+                            © 2023 adashe
+                        </p>
+                    </div>
+                    <div class="max-lg:mt-[22px]">
+                        <p
+                            class="text-[rgba(124,122,122,1)] text-[21px] font-[500] leading-[24px] max-lg:text-center max-md:text-[12px]">
+                            Join
+                            Our Newsletter</p>
+                        <div class="max-lg:justify-center flex">
+                            <div
+                                class="bg-white min-w-[575px] border-[1px] border-[rgba(215,215,215,1)] w-full mt-[21px] pl-[15px] rounded-[28px] max-md:max-w-[400px] max-sm:min-w-[150px] flex items-center justify-center ">
+                                <input
+                                    class="bg-white min-w-[575px] w-full rounded-[28px] max-md:max-w-[400px] max-sm:min-w-[150px] "
+                                    type="email" name="email" id="email" placeholder="Your email address">
+                                <button
+                                    class="text-[rgba(255,255,255,1)] max-sm:text-[12px] max-sm:px-[10px] cursor-pointer bg-[linear-gradient(to_right,#423CE3,#8635ED)] rounded-[28px] px-[30px] py-[13px]">Subscribe</button>
+                            </div>
+                        </div>
+                        <p
+                            class="font-[500] text-[14px] text-[rgba(39,38,38,1)] leading-[26px] mt-[21px] max-lg:text-center max-md:text-[12px]">
+                            * Will send you
+                            weekly
+                            updates for your
+                            better engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- footer-end -->
+    <script>
+        const btn = document.getElementById("menu")
+        btn.addEventListener("click", () => {
+            slider.style.left = "0%"
+            document.body.style.overflow = "hidden"
+        })
+        const crossn = document.getElementById("cross")
+        cross.addEventListener("click", () => {
+            slider.style.left = "-150%"
+            document.body.style.overflow = "auto"
+        })
+        const darkmode = document.getElementById("dark-light-mode")
+        darkmode.addEventListener("click", () => {
+            document.body.classList.toggle("dark-theme")
+        })
+
+
+    </script>
+</body>
+
+</html>
