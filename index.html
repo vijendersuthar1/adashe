@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adashe</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
@@ -28,6 +29,19 @@
 
         .head {
             color: var(--headings-color);
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            margin-top: 50px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 
@@ -768,6 +782,7 @@
         </section>
         <!-- our-team-section -->
         <section class="bg-[#F6F9FC]" id="team">
+
             <div
                 class="max-w-[1544px] w-full mx-auto px-[12px] pt-[140px] pb-[171.35px] max-xl:pt-[90px] max-xl:pb-[90px] max-md:pt-[50px] max-md:pb-[40px] max-sm:pt-[40px] max-sm:pb-[30px]">
                 <div>
@@ -782,99 +797,155 @@
                         and vision of our
                         management and staff.</p>
                 </div>
-                <div
-                    class="grid grid-cols-3 max-xl:grid-cols-2 max-sm:grid-cols-1 mt-[55px] gap-[30px] max-w-[1452px] w-full mx-auto">
-                    <div
-                        class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px] w-full bg-[#FFFFFF] rounded-[12px] mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
-                        <img src="/src/images/png/card-person.png" alt="card-person">
-                        <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
-                            <div class="flex justify-between">
-                                <h3
-                                    class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
-                                    Othniel Mbamalu
-                                    <span class="font-[Jost] font-[500] text-[16px] italic">CEO</span>
-                                </h3>
-                                <a href="#"> <img class="max-w-[464px] w-full" src="/src/images/svg/linkedin.svg"
-                                        alt="linkedin"></a>
-                            </div>
-                            <p class="leading-[187%] text-[14px] pt-[8px] max-lg:text-[12px] text-[rgba(90,85,107,1)]">
-                                An Aerospace Inventor with
-                                multiple US
-                                patents and an
-                                innovator in
-                                multiple spaces
-                                including
-                                Blockchain and Crypto</p>
-                        </div>
-                    </div>
-                    <div
-                        class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
-                        <img class="rounded-tr-[12px] rounded-tl-[12px]" src="/src/images/png/image 23.png"
-                            alt="card-person-second">
-                        <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
-                            <div class="flex justify-between">
-                                <h3
-                                    class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
-                                    Gerald Monroe
 
-                                    <span class="font-[Jost] font-[500] text-[16px] italic">CTO</span>
-                                </h3>
-                                <a href="#"> <img class="max-w-[464px] w-full" src="/src/images/svg/linkedin.svg"
-                                        alt="linkedin"></a>
-                            </div>
-                            <p class="leading-[187%] text-[14px] pt-[8px] max-lg:text-[12px] text-[rgba(90,85,107,1)]">
-                                Gerald has over 10 years
-                                of experience as a
-                                senior blockchain developer and has served as a C-Level Member and advisor to several
-                                industry-leading blockchain projects. </p>
-                        </div>
-                    </div>
-                    <div
-                        class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
-                        <img class="rounded-tr-[12px] rounded-tl-[12px]" src="/src/images/png/card-person-third.png"
-                            alt="card-person-third">
-                        <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
-                            <div class="flex justify-between">
-                                <h3
-                                    class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
-                                    Quivira. Ophir
 
-                                    <span class="font-[Jost] font-[500] text-[16px] italic">Chief Marketing
-                                        Officer</span>
-                                </h3>
-                                <a href="#"> <img class="max-w-[464px] w-full" src="/src/images/svg/linkedin.svg"
-                                        alt="linkedin"></a>
-                            </div>
-                            <p class="leading-[187%] text-[14px] pt-[8px] max-lg:text-[12px] text-[rgba(90,85,107,1)]">
-                                One of Africa's top crypto
-                                influencers,
-                                Quivira's skills extend beyond marketing into programming and business management</p>
-                        </div>
-                    </div>
-                    <div
-                        class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
-                        <img class="rounded-tr-[12px] rounded-tl-[12px]" src="/src/images/png/card-person-third.png"
-                            alt="card-person-fourth">
-                        <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
-                            <div class="flex justify-between">
-                                <h3
-                                    class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
-                                    Carl Tautenhahn
 
-                                    <span class="font-[Jost] font-[500] text-[16px] italic">CFO</span>
-                                </h3>
-                                <a href="#"> <img class="max-w-[464px] w-full" src="/src/images/svg/linkedin.svg"
-                                        alt="linkedin"></a>
+
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div
+                                class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px] w-full bg-[#FFFFFF] rounded-[12px] mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
+                                <img src="/src/images/png/card-person.png" alt="card-person">
+                                <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
+                                    <div class="flex justify-between">
+                                        <h3
+                                            class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
+                                            Othniel Mbamalu
+                                            <span class="font-[Jost] font-[500] text-[16px] italic">CEO</span>
+                                        </h3>
+                                        <a href="#"> <img class="max-w-[464px] w-full"
+                                                src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                                    </div>
+                                    <p
+                                        class="leading-[187%] text-[14px] pt-[8px] max-lg:text-[12px] text-[rgba(90,85,107,1)]">
+                                        An Aerospace Inventor with
+                                        multiple US
+                                        patents and an
+                                        innovator in
+                                        multiple spaces
+                                        including
+                                        Blockchain and Crypto</p>
+                                </div>
                             </div>
-                            <p class="leading-[187%] text-[14px] pt-[8px] max-lg:text-[12px] text-[rgba(90,85,107,1)]">
-                                Carl has been active in
-                                blockchain technology
-                                and crypto since 2012. With a background in Graph Theory and advanced optimization
-                                algorithms, Carl has co-funded and serves as an advisor to several pioneering Web3
-                                projects.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
+                                <img class="rounded-tr-[12px] rounded-tl-[12px]" src="/src/images/png/image 23.png"
+                                    alt="card-person-second">
+                                <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
+                                    <div class="flex justify-between">
+                                        <h3
+                                            class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
+                                            Gerald Monroe
+
+                                            <span class="font-[Jost] font-[500] text-[16px] italic">CTO</span>
+                                        </h3>
+                                        <a href="#"> <img class="max-w-[464px] w-full"
+                                                src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                                    </div>
+                                    <p
+                                        class="leading-[187%] text-[14px] pt-[8px] max-lg:text-[12px] text-[rgba(90,85,107,1)]">
+                                        Gerald has over 10 years
+                                        of experience as a
+                                        senior blockchain developer and has served as a C-Level Member and advisor to
+                                        several
+                                        industry-leading blockchain projects. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
+                                <img class="rounded-tr-[12px] rounded-tl-[12px]"
+                                    src="/src/images/png/card-person-third.png" alt="card-person-third">
+                                <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
+                                    <div class="flex justify-between">
+                                        <h3
+                                            class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
+                                            Quivira. Ophir
+
+                                            <span class="font-[Jost] font-[500] text-[16px] italic">Chief Marketing
+                                                Officer</span>
+                                        </h3>
+                                        <a href="#"> <img class="max-w-[464px] w-full"
+                                                src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                                    </div>
+                                    <p
+                                        class="leading-[187%] text-[14px] pt-[8px] max-lg:text-[12px] text-[rgba(90,85,107,1)]">
+                                        One of Africa's top crypto
+                                        influencers,
+                                        Quivira's skills extend beyond marketing into programming and business
+                                        management
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
+                                <img class="rounded-tr-[12px] rounded-tl-[12px]"
+                                    src="/src/images/png/card-person-third.png" alt="card-person-fourth">
+                                <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
+                                    <div class="flex justify-between">
+                                        <h3
+                                            class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
+                                            Carl Tautenhahn
+
+                                            <span class="font-[Jost] font-[500] text-[16px] italic">CFO</span>
+                                        </h3>
+                                        <a href="#"> <img class="max-w-[464px] w-full"
+                                                src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                                    </div>
+                                    <p
+                                        class="leading-[187%] text-[14px] pt-[8px] max-lg:text-[12px] text-[rgba(90,85,107,1)]">
+                                        Carl has been active in
+                                        blockchain technology
+                                        and crypto since 2012. With a background in Graph Theory and advanced
+                                        optimization
+                                        algorithms, Carl has co-funded and serves as an advisor to several pioneering
+                                        Web3
+                                        projects.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <div class="pb-[58px] pt-[45px]">
                     <h2
                         class="text-center text-[#4F3BE5] text-[60px] font-[700] leading-[100%] mx-auto max-lg:text-[26px] max-md:text-[18px]">
@@ -1188,6 +1259,9 @@
         </section>
     </footer>
     <!-- footer-end -->
+    <!-- swiper-js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- js -->
     <script>
         const btn = document.getElementById("menu")
         btn.addEventListener("click", () => {
@@ -1203,6 +1277,43 @@
         darkmode.addEventListener("click", () => {
             document.body.classList.toggle("dark-theme")
         })
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+
 
 
     </script>
