@@ -34,14 +34,27 @@
         .swiper {
             width: 100%;
             height: 100%;
-            margin-top: 50px;
+            margin-top: 44px;
         }
 
         .swiper-slide {
             text-align: center;
+            font-size: 18px;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper {
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 
@@ -115,10 +128,10 @@
 
                         <div class="mt-[28px] flex gap-[10px] max-xl:justify-center">
                             <button
-                                class=" rounded-[36px] bg-[linear-gradient(to_right,#423CE3,#8635ED)] cursor-pointer font-[700] text-white px-[44px] py-[20px] hover:translate-y-[-5px] duration-[0.5s] max-md:text-[12px] max-md:px-[11px] max-md:py-[11px]">BUY
+                                class=" rounded-[36px] bg-[#5953EF] cursor-pointer font-[700] text-white px-[44px] py-[20px] hover:bg-[transparent] hover:text-[#5953EF] duration-[0.5s] hover:border-[2px] border-[2px] max-md:text-[12px] max-md:px-[11px] max-md:py-[11px]">BUY
                                 TOKEN</button>
                             <button
-                                class=" text-[#5953EF] font-[700] bg-[transparent] border-[2px] rounded-[36px] px-[44px] py-[20px] hover:translate-y-[-5px] duration-[0.5s] cursor-pointer max-md:text-[12px] max-md:px-[11px] max-md:py-[11px]">WHITEPAPER</button>
+                                class=" text-[#5953EF] hover:text-[white] hover:bg-[#5953EF]  font-[700] bg-[transparent] border-[2px] rounded-[36px] px-[44px] py-[20px]  duration-[0.5s] cursor-pointer max-md:text-[12px] max-md:px-[11px] max-md:py-[11px]">WHITEPAPER</button>
                         </div>
                     </article>
                     <aside class="max-xl:mt-[28px]">
@@ -802,13 +815,16 @@
 
 
 
+
+
+
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div
-                                class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px] w-full bg-[#FFFFFF] rounded-[12px] mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
+                                class="max-w-[464px] min-h-[438px] items-center max-lg:max-w-[300px] max-md:max-w-[250px] w-full bg-[#FFFFFF] rounded-[12px] mx-auto cursor-pointer duration-[0.5s]">
                                 <img src="/src/images/png/card-person.png" alt="card-person">
-                                <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
+                                <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[21px]  px-[12px]">
                                     <div class="flex justify-between">
                                         <h3
                                             class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
@@ -832,10 +848,10 @@
                         </div>
                         <div class="swiper-slide">
                             <div
-                                class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
+                                class="max-w-[464px] min-h-[438px] items-cente max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer  duration-[0.5s]">
                                 <img class="rounded-tr-[12px] rounded-tl-[12px]" src="/src/images/png/image 23.png"
                                     alt="card-person-second">
-                                <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
+                                <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[21px]  px-[12px]">
                                     <div class="flex justify-between">
                                         <h3
                                             class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
@@ -858,10 +874,10 @@
                         </div>
                         <div class="swiper-slide">
                             <div
-                                class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
+                                class="max-w-[464px] min-h-[438px] items-cente max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer duration-[0.5s]">
                                 <img class="rounded-tr-[12px] rounded-tl-[12px]"
                                     src="/src/images/png/card-person-third.png" alt="card-person-third">
-                                <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
+                                <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[21px]  px-[12px]">
                                     <div class="flex justify-between">
                                         <h3
                                             class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
@@ -885,10 +901,10 @@
                         </div>
                         <div class="swiper-slide">
                             <div
-                                class="max-w-[464px] max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer hover:translate-y-[-8px] duration-[0.5s]">
+                                class="max-w-[464px] max-h-[438px] items-cente max-lg:max-w-[300px] max-md:max-w-[250px]  w-full bg-[#FFFFFF] rounded-[12px]  mx-auto cursor-pointer duration-[0.5s]">
                                 <img class="rounded-tr-[12px] rounded-tl-[12px]"
                                     src="/src/images/png/card-person-third.png" alt="card-person-fourth">
-                                <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[65px]  px-[12px]">
+                                <div class="max-w-[412px] w-full mx-auto pt-[24px] pb-[21px]  px-[12px]">
                                     <div class="flex justify-between">
                                         <h3
                                             class="  text-[rgba(90,85,107,1)] font-[Jost] max-w-[170px] w-full text-[20px] font-[700] leading-[100%]">
@@ -921,31 +937,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div class="pb-[58px] pt-[45px]">
                     <h2
                         class="text-center text-[#4F3BE5] text-[60px] font-[700] leading-[100%] mx-auto max-lg:text-[26px] max-md:text-[18px]">
@@ -955,48 +946,80 @@
                         Our success stems from the leadership, professionalism and vision of our management and staff.
                     </p>
                 </div>
-                <div class="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-[31px]">
-                    <div class="max-w-[362px] max-lg:max-w-[300px] max-md:max-w-[200px]  w-full mx-auto">
-                        <img src="/src/images/png/perkilis.png" alt="perkilis">
-                        <div class="flex justify-between px-[5px] pt-[24px]">
-                            <h3
-                                class="  text-[rgba(90,85,107,1)] font-[700] text-[20px] max-sm:text-[12px] leading-[100%]  font-[Jost]">
-                                Periklis
-                                Papadopoulos</h3>
-                            <a href="#"><img src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- second-swiper -->
+
+
+
+
+
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="max-w-[362px] max-lg:max-w-[300px] max-md:max-w-[200px]  w-full mx-auto">
+                                <img src="/src/images/png/perkilis.png" alt="perkilis">
+                                <div class="flex justify-between px-[5px] pt-[24px]">
+                                    <h3
+                                        class="  text-[rgba(90,85,107,1)] font-[700] text-[20px] max-sm:text-[12px] leading-[100%]  font-[Jost]">
+                                        Periklis
+                                        Papadopoulos</h3>
+                                    <a href="#"><img src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="max-w-[362px] max-lg:max-w-[300px] max-md:max-w-[200px]  w-full mx-auto">
-                        <img src="/src/images/png/jon.png" alt="jon">
-                        <div class="flex justify-between px-[5px] pt-[24px]">
-                            <h3
-                                class="font-[700] text-[20px] max-sm:text-[12px] leading-[100%]  font-[Jost]  text-[rgba(90,85,107,1)]">
-                                Jon Gillon
-                            </h3>
-                            <a href="#"><img src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                        <div class="swiper-slide">
+                            <div class="max-w-[362px] max-lg:max-w-[300px] max-md:max-w-[200px]  w-full mx-auto">
+                                <img src="/src/images/png/jon.png" alt="jon">
+                                <div class="flex justify-between px-[5px] pt-[24px]">
+                                    <h3
+                                        class="font-[700] text-[20px] max-sm:text-[12px] leading-[100%]  font-[Jost]  text-[rgba(90,85,107,1)]">
+                                        Jon Gillon
+                                    </h3>
+                                    <a href="#"><img src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="max-w-[362px] max-lg:max-w-[300px] max-md:max-w-[200px]  w-full mx-auto">
-                        <img src="/src/images/png/nick.png" alt="nick">
-                        <div class="flex justify-between px-[5px] pt-[24px]">
-                            <h3
-                                class="font-[700] text-[20px] max-sm:text-[12px] leading-[100%]  font-[Jost]  text-[rgba(90,85,107,1)]">
-                                Nick
-                                Raffin</h3>
-                            <a href="#"><img src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                        <div class="swiper-slide">
+                            <div class="max-w-[362px] max-lg:max-w-[300px] max-md:max-w-[200px]  w-full mx-auto">
+                                <img src="/src/images/png/nick.png" alt="nick">
+                                <div class="flex justify-between px-[5px] pt-[24px]">
+                                    <h3
+                                        class="font-[700] text-[20px] max-sm:text-[12px] leading-[100%]  font-[Jost]  text-[rgba(90,85,107,1)]">
+                                        Nick
+                                        Raffin</h3>
+                                    <a href="#"><img src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="max-w-[362px] max-lg:max-w-[300px] max-md:max-w-[200px]  w-full mx-auto">
-                        <img src="/src/images/png/uzo.png" alt="uzo">
-                        <div class="flex justify-between px-[5px] pt-[24px]">
-                            <h3
-                                class="font-[700] text-[20px] max-sm:text-[12px] leading-[100%]  font-[Jost]  text-[rgba(90,85,107,1)]">
-                                Uzochukwu
-                                Mbamalu</h3>
-                            <a href="#"><img src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                        <div class="swiper-slide">
+                            <div class="max-w-[362px] max-lg:max-w-[300px] max-md:max-w-[200px]  w-full mx-auto">
+                                <img src="/src/images/png/uzo.png" alt="uzo">
+                                <div class="flex justify-between px-[5px] pt-[24px]">
+                                    <h3
+                                        class="font-[700] text-[20px] max-sm:text-[12px] leading-[100%]  font-[Jost]  text-[rgba(90,85,107,1)]">
+                                        Uzochukwu
+                                        Mbamalu</h3>
+                                    <a href="#"><img src="/src/images/svg/linkedin.svg" alt="linkedin"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+
             </div>
 
         </section>
@@ -1280,38 +1303,28 @@
 
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
-            centeredSlides: true,
+            loop: true,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
-            },
-
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
             },
             breakpoints: {
-                640: {
-                    slidesPerView: 2,
+                500: {
+                    slidesPerView: 1,
                     spaceBetween: 20,
                 },
                 768: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
                     spaceBetween: 40,
                 },
                 1024: {
-                    slidesPerView: 5,
+                    slidesPerView: 4,
                     spaceBetween: 50,
                 },
             },
         });
+
+
 
 
 
